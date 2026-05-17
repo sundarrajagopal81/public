@@ -54,5 +54,19 @@
     "category": "Food",
     "description": "Dinner out",
     "date": "2026-05-12"
+  },
+  {
+    "id": 9,
+    "amount": 9.99,
+    "category": "Entertainment",
+    "description": "Spotify",
+    "date": "2026-05-17"
+  },
+  {
+    "id": 10,
+    "amount": 55.0,
+    "category": "Food",
+    "description": "Weekly groceries",
+    "date": "2026-05-17"
   }
 ]
