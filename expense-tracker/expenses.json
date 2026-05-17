@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "amount": 1200.0,
+    "category": "Housing",
+    "description": "Rent",
+    "date": "2026-05-01"
+  },
+  {
+    "id": 2,
+    "amount": 85.5,
+    "category": "Food",
+    "description": "Groceries",
+    "date": "2026-05-03"
+  },
+  {
+    "id": 3,
+    "amount": 45.0,
+    "category": "Transport",
+    "description": "Monthly bus pass",
+    "date": "2026-05-01"
+  },
+  {
+    "id": 4,
+    "amount": 12.99,
+    "category": "Entertainment",
+    "description": "Netflix",
+    "date": "2026-05-05"
+  },
+  {
+    "id": 5,
+    "amount": 200.0,
+    "category": "Utilities",
+    "description": "Electricity + internet",
+    "date": "2026-05-04"
+  },
+  {
+    "id": 6,
+    "amount": 60.0,
+    "category": "Health",
+    "description": "Gym membership",
+    "date": "2026-05-02"
+  },
+  {
+    "id": 7,
+    "amount": 134.2,
+    "category": "Shopping",
+    "description": "Clothes",
+    "date": "2026-05-10"
+  },
+  {
+    "id": 8,
+    "amount": 22.8,
+    "category": "Food",
+    "description": "Dinner out",
+    "date": "2026-05-12"
+  }
+]
