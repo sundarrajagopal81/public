@@ -31,13 +31,13 @@
 </head>
 <body>
 <h1>Monthly Expense Report</h1>
-<p class="sub">Period: <strong>2026-05</strong> &nbsp;|&nbsp; Generated: 2026-05-17 15:35</p>
+<p class="sub">Period: <strong>2026-05</strong> &nbsp;|&nbsp; Generated: 2026-05-17 15:44</p>
 
 <div class="cards">
-  <div class="card"><div class="label">Total Spent</div><div class="value">$1,760.49</div></div>
-  <div class="card"><div class="label">Transactions</div><div class="value">8</div></div>
+  <div class="card"><div class="label">Total Spent</div><div class="value">$1,998.98</div></div>
+  <div class="card"><div class="label">Transactions</div><div class="value">13</div></div>
   <div class="card"><div class="label">Categories</div><div class="value">7</div></div>
-  <div class="card"><div class="label">Avg per Transaction</div><div class="value">$220.06</div></div>
+  <div class="card"><div class="label">Avg per Transaction</div><div class="value">$153.77</div></div>
 </div>
 
 <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start">
@@ -49,14 +49,14 @@
   <h2>Category Breakdown</h2>
   <table>
     <thead><tr><th>Category</th><th class="amt">Amount</th><th>Share</th></tr></thead>
-    <tbody><tr><td>Housing</td><td class='amt'>$1200.00</td><td>68.2%</td></tr>
-<tr><td>Utilities</td><td class='amt'>$200.00</td><td>11.4%</td></tr>
-<tr><td>Shopping</td><td class='amt'>$134.20</td><td>7.6%</td></tr>
-<tr><td>Food</td><td class='amt'>$108.30</td><td>6.2%</td></tr>
-<tr><td>Health</td><td class='amt'>$60.00</td><td>3.4%</td></tr>
-<tr><td>Transport</td><td class='amt'>$45.00</td><td>2.6%</td></tr>
-<tr><td>Entertainment</td><td class='amt'>$12.99</td><td>0.7%</td></tr></tbody>
-    <tfoot><tr><td>Total</td><td class="amt">$1760.49</td><td>100%</td></tr></tfoot>
+    <tbody><tr><td>Housing</td><td class='amt'>$1200.00</td><td>60.0%</td></tr>
+<tr><td>Shopping</td><td class='amt'>$254.20</td><td>12.7%</td></tr>
+<tr><td>Utilities</td><td class='amt'>$200.00</td><td>10.0%</td></tr>
+<tr><td>Food</td><td class='amt'>$181.80</td><td>9.1%</td></tr>
+<tr><td>Transport</td><td class='amt'>$80.00</td><td>4.0%</td></tr>
+<tr><td>Health</td><td class='amt'>$60.00</td><td>3.0%</td></tr>
+<tr><td>Entertainment</td><td class='amt'>$22.98</td><td>1.1%</td></tr></tbody>
+    <tfoot><tr><td>Total</td><td class="amt">$1998.98</td><td>100%</td></tr></tfoot>
   </table>
 </div>
 </div>
@@ -70,14 +70,19 @@
 <tr><td>5</td><td>2026-05-04</td><td>Utilities</td><td class='amt'>$200.00</td><td>Electricity + internet</td></tr>
 <tr><td>4</td><td>2026-05-05</td><td>Entertainment</td><td class='amt'>$12.99</td><td>Netflix</td></tr>
 <tr><td>7</td><td>2026-05-10</td><td>Shopping</td><td class='amt'>$134.20</td><td>Clothes</td></tr>
-<tr><td>8</td><td>2026-05-12</td><td>Food</td><td class='amt'>$22.80</td><td>Dinner out</td></tr></tbody>
-  <tfoot><tr><td colspan="3">Total</td><td class="amt">$1760.49</td><td></td></tr></tfoot>
+<tr><td>8</td><td>2026-05-12</td><td>Food</td><td class='amt'>$22.80</td><td>Dinner out</td></tr>
+<tr><td>9</td><td>2026-05-17</td><td>Entertainment</td><td class='amt'>$9.99</td><td>Spotify</td></tr>
+<tr><td>10</td><td>2026-05-17</td><td>Food</td><td class='amt'>$55.00</td><td>Weekly groceries</td></tr>
+<tr><td>11</td><td>2026-05-17</td><td>Transport</td><td class='amt'>$35.00</td><td>Uber rides</td></tr>
+<tr><td>12</td><td>2026-05-17</td><td>Shopping</td><td class='amt'>$120.00</td><td>Books</td></tr>
+<tr><td>13</td><td>2026-05-17</td><td>Food</td><td class='amt'>$18.50</td><td>Coffee shop</td></tr></tbody>
+  <tfoot><tr><td colspan="3">Total</td><td class="amt">$1998.98</td><td></td></tr></tfoot>
 </table>
 
 <script>
 (function() {
   var labels = ["Housing", "Transport", "Health", "Food", "Utilities", "Entertainment", "Shopping"];
-  var values = [1200.0, 45.0, 60.0, 108.3, 200.0, 12.99, 134.2];
+  var values = [1200.0, 80.0, 60.0, 181.8, 200.0, 22.98, 254.2];
   if (!labels.length) return;
   var canvas = document.getElementById('pie');
   if (!canvas) return;

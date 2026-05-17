@@ -68,5 +68,26 @@
     "category": "Food",
     "description": "Weekly groceries",
     "date": "2026-05-17"
+  },
+  {
+    "id": 11,
+    "amount": 35.0,
+    "category": "Transport",
+    "description": "Uber rides",
+    "date": "2026-05-17"
+  },
+  {
+    "id": 12,
+    "amount": 120.0,
+    "category": "Shopping",
+    "description": "Books",
+    "date": "2026-05-17"
+  },
+  {
+    "id": 13,
+    "amount": 18.5,
+    "category": "Food",
+    "description": "Coffee shop",
+    "date": "2026-05-17"
   }
 ]
