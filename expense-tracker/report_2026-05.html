@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expense Report &mdash; 2026-05</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #f5f7fa; color: #333; padding: 2rem; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  .sub { color: #666; margin-bottom: 2rem; font-size: 0.9rem; }
+  .cards { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+  .card { background: #fff; border-radius: 10px; padding: 1.2rem 1.6rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,.08); min-width: 160px; }
+  .card .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .05em; color: #888; }
+  .card .value { font-size: 1.8rem; font-weight: 700; color: #2563eb; margin-top: .2rem; }
+  h2 { font-size: 1.1rem; margin-bottom: .75rem; margin-top: 2rem; }
+  table { width: 100%; border-collapse: collapse; background: #fff;
+           border-radius: 10px; overflow: hidden;
+           box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  th, td { padding: .65rem 1rem; text-align: left; font-size: .9rem; }
+  th { background: #2563eb; color: #fff; font-weight: 600; }
+  tr:nth-child(even) { background: #f0f4ff; }
+  .amt { text-align: right; font-variant-numeric: tabular-nums; }
+  tfoot td { font-weight: 700; background: #e8f0fe; }
+  .chart-wrap { background: #fff; border-radius: 10px; padding: 1.5rem;
+                 box-shadow: 0 1px 4px rgba(0,0,0,.08); max-width: 420px; }
+  canvas { max-width: 100%; }
+  .empty { color: #888; font-style: italic; }
+</style>
+</head>
+<body>
+<h1>Monthly Expense Report</h1>
+<p class="sub">Period: <strong>2026-05</strong> &nbsp;|&nbsp; Generated: 2026-05-17 15:44</p>
+
+<div class="cards">
+  <div class="card"><div class="label">Total Spent</div><div class="value">$1,998.98</div></div>
+  <div class="card"><div class="label">Transactions</div><div class="value">13</div></div>
+  <div class="card"><div class="label">Categories</div><div class="value">7</div></div>
+  <div class="card"><div class="label">Avg per Transaction</div><div class="value">$153.77</div></div>
+</div>
+
+<div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start">
+<div class="chart-wrap">
+  <h2>By Category</h2>
+  <canvas id="pie" width="360" height="360"></canvas>
+</div>
+<div style="flex:1;min-width:280px">
+  <h2>Category Breakdown</h2>
+  <table>
+    <thead><tr><th>Category</th><th class="amt">Amount</th><th>Share</th></tr></thead>
+    <tbody><tr><td>Housing</td><td class='amt'>$1200.00</td><td>60.0%</td></tr>
+<tr><td>Shopping</td><td class='amt'>$254.20</td><td>12.7%</td></tr>
+<tr><td>Utilities</td><td class='amt'>$200.00</td><td>10.0%</td></tr>
+<tr><td>Food</td><td class='amt'>$181.80</td><td>9.1%</td></tr>
+<tr><td>Transport</td><td class='amt'>$80.00</td><td>4.0%</td></tr>
+<tr><td>Health</td><td class='amt'>$60.00</td><td>3.0%</td></tr>
+<tr><td>Entertainment</td><td class='amt'>$22.98</td><td>1.1%</td></tr></tbody>
+    <tfoot><tr><td>Total</td><td class="amt">$1998.98</td><td>100%</td></tr></tfoot>
+  </table>
+</div>
+</div>
+<h2 style="margin-top:2rem">All Transactions</h2>
+<table>
+  <thead><tr><th>#</th><th>Date</th><th>Category</th><th class="amt">Amount</th><th>Description</th></tr></thead>
+  <tbody><tr><td>1</td><td>2026-05-01</td><td>Housing</td><td class='amt'>$1200.00</td><td>Rent</td></tr>
+<tr><td>3</td><td>2026-05-01</td><td>Transport</td><td class='amt'>$45.00</td><td>Monthly bus pass</td></tr>
+<tr><td>6</td><td>2026-05-02</td><td>Health</td><td class='amt'>$60.00</td><td>Gym membership</td></tr>
+<tr><td>2</td><td>2026-05-03</td><td>Food</td><td class='amt'>$85.50</td><td>Groceries</td></tr>
+<tr><td>5</td><td>2026-05-04</td><td>Utilities</td><td class='amt'>$200.00</td><td>Electricity + internet</td></tr>
+<tr><td>4</td><td>2026-05-05</td><td>Entertainment</td><td class='amt'>$12.99</td><td>Netflix</td></tr>
+<tr><td>7</td><td>2026-05-10</td><td>Shopping</td><td class='amt'>$134.20</td><td>Clothes</td></tr>
+<tr><td>8</td><td>2026-05-12</td><td>Food</td><td class='amt'>$22.80</td><td>Dinner out</td></tr>
+<tr><td>9</td><td>2026-05-17</td><td>Entertainment</td><td class='amt'>$9.99</td><td>Spotify</td></tr>
+<tr><td>10</td><td>2026-05-17</td><td>Food</td><td class='amt'>$55.00</td><td>Weekly groceries</td></tr>
+<tr><td>11</td><td>2026-05-17</td><td>Transport</td><td class='amt'>$35.00</td><td>Uber rides</td></tr>
+<tr><td>12</td><td>2026-05-17</td><td>Shopping</td><td class='amt'>$120.00</td><td>Books</td></tr>
+<tr><td>13</td><td>2026-05-17</td><td>Food</td><td class='amt'>$18.50</td><td>Coffee shop</td></tr></tbody>
+  <tfoot><tr><td colspan="3">Total</td><td class="amt">$1998.98</td><td></td></tr></tfoot>
+</table>
+
+<script>
+(function() {
+  var labels = ["Housing", "Transport", "Health", "Food", "Utilities", "Entertainment", "Shopping"];
+  var values = [1200.0, 80.0, 60.0, 181.8, 200.0, 22.98, 254.2];
+  if (!labels.length) return;
+  var canvas = document.getElementById('pie');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var colors = ['#2563eb','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#84cc16'];
+  var total = values.reduce(function(a,b){return a+b;}, 0);
+  var start = -Math.PI / 2;
+  var cx = canvas.width/2, cy = canvas.height/2, r = Math.min(cx,cy) - 40;
+  values.forEach(function(v, i) {
+    var slice = (v / total) * 2 * Math.PI;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, start + slice);
+    ctx.closePath();
+    ctx.fillStyle = colors[i % colors.length];
+    ctx.fill();
+    var mid = start + slice / 2;
+    var lx = cx + (r * 0.65) * Math.cos(mid);
+    var ly = cy + (r * 0.65) * Math.sin(mid);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 12px system-ui';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    if (v / total > 0.05) ctx.fillText(labels[i], lx, ly);
+    start += slice;
+  });
+  var legendY = cy + r + 16;
+  labels.forEach(function(l, i) {
+    var lx = 16 + (i % 4) * 88;
+    var ly = legendY + Math.floor(i / 4) * 20;
+    ctx.fillStyle = colors[i % colors.length];
+    ctx.fillRect(lx, ly, 12, 12);
+    ctx.fillStyle = '#333';
+    ctx.font = '11px system-ui';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillText(l, lx + 16, ly);
+  });
+})();
+</script>
+</body>
+</html>
